@@ -5,7 +5,8 @@ WORKDIR /var/workspace
 ADD . /var/workspace
 
 RUN npm install
+RUN npm install -g nodemon
 
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["npm"]
+CMD "start"
 EXPOSE 8080
-
