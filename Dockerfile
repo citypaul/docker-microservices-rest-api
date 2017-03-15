@@ -7,3 +7,5 @@ ADD . /var/workspace
 RUN npm install
 
 ENTRYPOINT ["npm", "start"]
+EXPOSE 8080
+
